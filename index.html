@@ -1,22 +1,175 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>TODOS LOCOS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
-    <style>
+  </head>
+  <style>
     body {
-        background-color: yellow;
-        /*dbdwdhwidhwi*/
+      background-color: lightgrey;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
     }
-    </style>
-</head>
-<body>
-    <button style="background-color: blue; color:violet">Aceptar</button>
-    <button style="background-color: crimson; color:black">Cancelar</button>
+    .C1 {
+      border: 2px;
+      color: black;
+      background-color: lightcyan;
+    }
+    .C2 {
+     border:2px;
+     color: black;
+     background-color: lightcyan;
+     
+    }
+
+    .C3 {
+      border: 2px;
+      color: black;
+      background-color: lightcyan;
+      
+    }
+    /* PSEUDO CLASS */
+    input::placeholder {
+      color:hotpink;
+    }
     
-</body>
+   
+
+  </style>
+  <body>
+    <!-- ENCABEZADO -->
+    <!--TEXT AREA-->
+    <textarea name="placeholder" id="" cols="30" rows="10"></textarea>
+    <!--FIN TEXT AREA-->
+    <header>
+      <h1>Formulario AFIP 420</h1>
+      <p>Este formulario te va a robar la vida</p>
+    </header>
+    <nav style="color:indigo">
+      <ul>
+        <li><a href="#section-1">Seccion 1</a></li>
+        <li><a href="#section-2">Seccion 2</a></li>
+        <li><a href="#section-3">Seccion 3</a></li>
+        <!-- FIN DE ENCABEZADO -->
+      </ul>
+    </nav>
+    <!-- CONTENIDO -->
+    <form>
+      <code ><fieldset class="C1">
+        <legend>
+          <inicio-de-los-datos>Datos personales</inicio-de-los-datos>
+        </legend>
+        <label for="Nombre-y-Apellido">Nombre y Apellido</label>
+        <input type="text" placeholder="Nombres y apellidos completos" />
+        <br />
+        <label for="fecha-de-nacimiento">Fecha de Nacimiento</label>
+        <input type="date" placeholder="Fecha de nacimiento" />
+        <br />
+        <label for="edad">Edad</label>
+        <input type="number" placeholder="Edad" />
+        <br />
+        <!-- TIPO DE SANGRE -->
+        <label for="tipo-de-sangre">Tipo de sangre</label>
+        <span id="tipo-de-sangre">
+          <br />
+          <label for="tipo-de-sangre-0">0</label>
+          <input name="tipo de sangre" type="radio" />
+          <label for="tipo-de-sangre-A">A</label>
+          <input name="tipo de sangre" type="radio" />
+          <label for="tipo-de-sangre-B">B</label>
+          <input name="tipo de sangre" type="radio" />
+          <label for="tipo-de-sangre-AB">AB</label>
+          <input name="tipo de sangre" type="radio" />
+        </span>
+        <!-- CIERRE DE TIPO DE SANGRE -->
+        <br />
+        <label for="RH-Sangre">RH de Sangre</label>
+
+        <select name="RH sangre" id="rh-sangre">
+          <option value="">Seleccione su RH</option>
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="0">0</option>
+        </select>
+        <br />
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" />
+        <br />
+        <label for="Numero de Telefono">Número de teléfono</label>
+        <input type="number" placeholder="N° de Tel" />
+        <br />
+        <label for="dni">dni</label>
+        <input type="number" placeholder="DNI" />
+        <br />
+        <label for="tarjeta-de-credito">Tarjeta de Credito</label>
+        <input type="number" placeholder="N° de Tarjeta" />
+        <br />
+      </fieldset></code>
+    </form>
+    <!-- FIN DE CONTENIDO -->
+    <!-- SEGUNDO FORMULARIO -->
+    <form>
+      <code > <fieldset class="C2">
+        <legend>
+          <Principio-de-los-datos>Datos de su mascota</Principio-de-los-datos>
+        </legend>
+        <label for="Nombre">Nombre</label>
+        <input type="text" placeholder="Pupi" />
+        <br />
+        <label for="fecha-de-nacimiento">Fecha de Nacimiento</label>
+        <input type="date" placeholder="Fecha de nacimiento" />
+        <br />
+        <label for="edad">Edad</label>
+        <input type="number" placeholder="2 años" />
+        <br />
+        <label for="Raza">Raza</label>
+        <input type="text" placeholder="Callejero" />
+        <br />
+        <label for="Tamaño">Tamaño</label>
+        <br />
+        <input type="checkbox" name="Chico" value="Chico" /> Chico
+        <br />
+        <input type="checkbox" name="Mediano" value="Mediano" /> Mediano
+        <br />
+        <input type="checkbox" name="Grande" value="Grande" /> Grande
+        <br />
+        Foto de tu Mascota: <input type="file" name="myFile" />
+      </fieldset></code>
+    </form>
+    <!-- FIN DEL SEGUNDO FORMULARIO -->
+    <!-- TERCER FORMULARIO -->
+    <form>
+      <code > <fieldset class="C3">
+        <legend>
+          <Datos-del-tia>Datos de su tía</Datos-del-tia>
+        </legend>
+        <label for="Nombre">Apodo</label>
+        <input type="text" placeholder="Tia Chola" />
+        <br />
+        <label for="fecha-de-nacimiento">Fecha de Nacimiento</label>
+        <input type="date" placeholder="Fecha de nacimiento" />
+        <br />
+        <label for="edad">Edad</label>
+        <input type="number" placeholder="Años" />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" />
+        <br />
+        <label for="Numero de Telefono">Número de teléfono</label>
+        <input type="number" placeholder="N° de Tel" />
+        <br />
+        <label for="dni">DNI</label>
+        <input type="number" placeholder="DNI" />
+        <br />
+        Foto de su tía: <input type="file" name="myFile" />
+      </fieldset></code>
+    </form>
+    <!-- FIN DEL TERCER FORMULARIO -->
+
+    <!-- FIN DE CONTENIDO -->
+  </body>
 </html>
